@@ -8,5 +8,6 @@ namespace PeliculasAPI.Entidades
         [Required]
         [StringLength(40)]
         public required string Nombre { get; set; }
+        public List<PeliculasGeneros> PeliculasGeneros { get; set; }
     }
 }

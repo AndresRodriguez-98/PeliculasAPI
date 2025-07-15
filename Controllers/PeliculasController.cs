@@ -67,10 +67,22 @@ namespace PeliculasAPI.Controllers
                 }
             }
 
+            AsignarOrdenActores(entidad);
             context.Add(entidad);
             await context.SaveChangesAsync();
             var peliculaDTO = mapper.Map<PeliculaDTO>(entidad);
             return new CreatedAtRouteResult("ObtenerPelicula", new { id = entidad.Id}, peliculaDTO);
+        }
+
+        private void AsignarOrdenActores(Pelicula pelicula)
+        {
+            if (pelicula.PeliculasActores != null)
+            {
+                for (int i = 0; i < pelicula.PeliculasActores.Count; i++)
+                {
+                    pelicula.PeliculasActores[i].Orden = i;
+                }
+            }
         }
 
         [HttpPut("{id}")]
@@ -82,7 +94,10 @@ namespace PeliculasAPI.Controllers
             //// tengo que avisar que voy a actualizar la DB antes de guardar los cambios
             //context.Entry(entidad).State = EntityState.Modified;
 
-            var peliculaDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+            var peliculaDB = await context.Peliculas
+                .Include(x => x.PeliculasActores)
+                .Include(x => x.PeliculasGeneros)
+                .FirstOrDefaultAsync(x => x.Id == id);
 
             if (peliculaDB == null) { return NotFound(); }
 
@@ -101,6 +116,7 @@ namespace PeliculasAPI.Controllers
 
             }
 
+            AsignarOrdenActores(peliculaDB);
             await context.SaveChangesAsync();
             return NoContent();
         }

@@ -286,6 +286,16 @@
         "IsRequired": false
       },
       {
+        "Name": "GenerosIDs",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Actores",
+        "Type": "System.Collections.Generic.List\u00601[[PeliculasAPI.DTOs.ActorPeliculaCreacionDTO, PeliculasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
         "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
@@ -351,6 +361,16 @@
       {
         "Name": "Poster",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "GenerosIDs",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Actores",
+        "Type": "System.Collections.Generic.List\u00601[[PeliculasAPI.DTOs.ActorPeliculaCreacionDTO, PeliculasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       },
       {
