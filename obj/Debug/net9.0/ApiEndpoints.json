@@ -262,7 +262,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PeliculasAPI.DTOs.PeliculaDTO, PeliculasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "PeliculasAPI.DTOs.PeliculasIndexDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -334,7 +334,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PeliculasAPI.DTOs.PeliculaDTO",
+        "Type": "PeliculasAPI.DTOs.PeliculaDetallesDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -432,5 +432,66 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeliculasAPI.Controllers.PeliculasController",
+    "Method": "Filtrar",
+    "RelativePath": "api/peliculas/filtro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRegistrosPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Paginacion.Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Paginacion.CantidadRegistrosPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Titulo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GeneroId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EnCines",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProximosEstrenos",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PeliculasAPI.DTOs.PeliculaDTO, PeliculasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
