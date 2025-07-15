@@ -63,6 +63,31 @@ namespace PeliculasAPI.Migrations
 
                     b.ToTable("Generos");
                 });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.Pelicula", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("EnCines")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("FechaEstreno")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Poster")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titulo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Peliculas");
+                });
 #pragma warning restore 612, 618
         }
     }

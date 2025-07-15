@@ -172,3 +172,4 @@ C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.AspNetCore
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.Extensions.Configuration.NewtonsoftJson.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.sourcelink.json

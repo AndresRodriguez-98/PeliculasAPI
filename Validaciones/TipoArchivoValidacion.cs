@@ -15,7 +15,7 @@ namespace PeliculasAPI.Validaciones
         {
             if (grupoTipoArchivo == GrupoTipoArchivo.Imagen)
             {
-                tiposValidos = new string[] { "image/jpg", "image/png", "image/gif" };
+                tiposValidos = new string[] { "image/jpg", "image/png", "image/gif", "image/webp" };
             }
         }
 

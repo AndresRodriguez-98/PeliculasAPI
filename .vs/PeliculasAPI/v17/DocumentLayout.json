@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\dtos\\paginaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:dtos\\paginaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\validaciones\\tipoarchivovalidacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:validaciones\\tipoarchivovalidacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\dtos\\peliculapatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:dtos\\peliculapatchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\dtos\\peliculacreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:dtos\\peliculacreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\helpers\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:helpers\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\helpers\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:helpers\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,53 +43,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaginacionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PaginacionDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\PaginacionDTO.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PaginacionDTO.cs",
-              "RelativeToolTip": "DTOs\\PaginacionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Title": "TipoArchivoValidacion.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Validaciones\\TipoArchivoValidacion.cs",
+              "RelativeDocumentMoniker": "Validaciones\\TipoArchivoValidacion.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Validaciones\\TipoArchivoValidacion.cs",
+              "RelativeToolTip": "Validaciones\\TipoArchivoValidacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T23:16:20.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QueryableExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\QueryableExtensions.cs",
-              "RelativeDocumentMoniker": "Helpers\\QueryableExtensions.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\QueryableExtensions.cs",
-              "RelativeToolTip": "Helpers\\QueryableExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T23:08:34.255Z",
+              "WhenOpened": "2025-07-15T18:16:59.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HttpContextExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\HttpContextExtensions.cs",
-              "RelativeDocumentMoniker": "Helpers\\HttpContextExtensions.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\HttpContextExtensions.cs",
-              "RelativeToolTip": "Helpers\\HttpContextExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "Helpers\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "Helpers\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T23:01:59.249Z",
+              "WhenOpened": "2025-07-15T18:08:20.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeliculaCreacionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PeliculaCreacionDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\PeliculaCreacionDTO.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PeliculaCreacionDTO.cs",
+              "RelativeToolTip": "DTOs\\PeliculaCreacionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:06:00.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeliculaPatchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PeliculaPatchDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\PeliculaPatchDTO.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PeliculaPatchDTO.cs",
+              "RelativeToolTip": "DTOs\\PeliculaPatchDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:05:55.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PeliculasController.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PeliculasController.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
+              "RelativeToolTip": "Controllers\\PeliculasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:01:25.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ActoresController.cs",
               "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\ActoresController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActoresController.cs",
               "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\ActoresController.cs",
               "RelativeToolTip": "Controllers\\ActoresController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACgAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T22:59:22.584Z",
+              "WhenOpened": "2025-07-15T16:01:25.194Z",
               "EditorCaption": ""
             }
           ]

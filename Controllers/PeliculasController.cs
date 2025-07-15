@@ -1,0 +1,155 @@
+﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using PeliculasAPI.Datos;
+using PeliculasAPI.DTOs;
+using PeliculasAPI.Entidades;
+using PeliculasAPI.Servicios;
+
+namespace PeliculasAPI.Controllers
+{
+    [ApiController]
+    [Route("api/peliculas")]
+    public class PeliculasController : ControllerBase
+    {
+        private readonly ApplicationDBContext context;
+        private readonly IMapper mapper;
+        private readonly IAlmacenadorArchivos almacenadorArchivos;
+        private readonly string contenedor = "peliculas";
+
+        public PeliculasController(ApplicationDBContext context,
+            IMapper mapper, IAlmacenadorArchivos almacenadorArchivos)
+        {
+            this.context = context;
+            this.mapper = mapper;
+            this.almacenadorArchivos = almacenadorArchivos;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<PeliculaDTO>>> Get()
+        {
+            var peliculas = await context.Peliculas.ToListAsync();
+            return mapper.Map<List<PeliculaDTO>>(peliculas);
+        }
+
+        [HttpGet("{id}", Name = "obtenerPelicula")]
+        public async Task<ActionResult<PeliculaDTO>> Get(int id)
+        {
+            var pelicula = await context.Peliculas.FirstOrDefaultAsync(
+                x => x.Id == id);
+
+            if (pelicula == null)
+            {
+                return NotFound();
+            }
+
+            return mapper.Map<PeliculaDTO>(pelicula);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post([FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
+        {
+            var entidad = mapper.Map<Pelicula>(peliculaCreacionDTO);
+
+            if (peliculaCreacionDTO.Poster != null)
+            {
+                // como la imagen tiene que ser guardada como un arreglo de binarios, usamos el tipo de dato
+                // memoryStream de .NET para trabajar con flujo de memoria y podes actuar como contenedor temporal
+                // del archivo subido antes de guardarlo en la DB (lo usamos pa manejar binarios basica//)
+                using(var memoryStream = new MemoryStream())
+                {
+                    await peliculaCreacionDTO.Poster.CopyToAsync(memoryStream); // aca lo tenes en bytes
+                    var contenido = memoryStream.ToArray(); // aca en array de bytes como queremos
+                    var extension = Path.GetExtension(peliculaCreacionDTO.Poster.FileName); // luckeamos la extension
+                    entidad.Poster = await almacenadorArchivos.GuardarArchivo(contenido, extension, 
+                        contenedor, peliculaCreacionDTO.Poster.ContentType);
+                }
+            }
+
+            context.Add(entidad);
+            await context.SaveChangesAsync();
+            var peliculaDTO = mapper.Map<PeliculaDTO>(entidad);
+            return new CreatedAtRouteResult("ObtenerPelicula", new { id = entidad.Id}, peliculaDTO);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
+        {
+            // esta seria la manera si no tendriamos foto y siempre le mandariamos todos los campos a editar, pero con foto estaria mal
+            //var entidad = mapper.Map<Actor>(actorCreacionDTO);
+            //entidad.Id = id;
+            //// tengo que avisar que voy a actualizar la DB antes de guardar los cambios
+            //context.Entry(entidad).State = EntityState.Modified;
+
+            var peliculaDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (peliculaDB == null) { return NotFound(); }
+
+            peliculaDB = mapper.Map(peliculaCreacionDTO, peliculaDB);
+
+            if (peliculaCreacionDTO.Poster != null)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await peliculaCreacionDTO.Poster.CopyToAsync(memoryStream); // esto está en bytes pero lo necesito en arreglo de bytes:
+                    var contenido = memoryStream.ToArray();
+                    var extension = Path.GetExtension(peliculaCreacionDTO.Poster.FileName);
+                    peliculaDB.Poster = await almacenadorArchivos.EditarArchivo(contenido, extension, contenedor,
+                        peliculaDB.Poster, peliculaCreacionDTO.Poster.ContentType);
+                }
+
+            }
+
+            await context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<ActionResult> Patch(int id, [FromBody] JsonPatchDocument<PeliculaPatchDTO> patchDocument)
+        {
+            if (patchDocument == null)
+            {
+                return BadRequest();
+            }
+
+            var entidadDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (entidadDB == null)
+            {
+                return NotFound();
+            }
+
+            var entidadDTO = mapper.Map<PeliculaPatchDTO>(entidadDB);
+
+            patchDocument.ApplyTo(entidadDTO, ModelState);
+
+            var esValido = TryValidateModel(entidadDTO); // devuelve T or F segun si estuvo bien el parche que le hicimos
+
+            if (!esValido)
+            {
+                return BadRequest();
+            }
+
+            mapper.Map(entidadDTO, entidadDB);
+
+            await context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var entidad = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (entidad == null)
+            {
+                return NotFound();
+            }
+
+            context.Remove(entidad);
+            await context.SaveChangesAsync();
+            return NoContent();
+        }
+    }
+}
