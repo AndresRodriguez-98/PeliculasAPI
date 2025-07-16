@@ -56,7 +56,7 @@
             },
             "Azure.Storage.Blobs": {
               "target": "Package",
-              "version": "[12.24.1, )"
+              "version": "[12.25.0, )"
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
@@ -67,6 +67,10 @@
               "version": "[9.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
               "target": "Package",
               "version": "[9.0.7, )"
             },

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GenerosController.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\GenerosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GenerosController.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\GenerosController.cs",
-              "RelativeToolTip": "Controllers\\GenerosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
+              "Title": "SalaCineController.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SalaCineController.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
+              "RelativeToolTip": "Controllers\\SalaCineController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T15:27:23.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomBaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\CustomBaseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomBaseController.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\CustomBaseController.cs",
-              "RelativeToolTip": "Controllers\\CustomBaseController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAswEMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T15:23:06.668Z",
+              "WhenOpened": "2025-07-16T17:13:55.27Z",
               "EditorCaption": ""
             }
           ]

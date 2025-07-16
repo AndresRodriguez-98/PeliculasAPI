@@ -174,3 +174,7 @@ C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.sourcelink.json
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\System.Linq.Dynamic.Core.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\NetTopologySuite.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\EFCoreSqlServerNetTopologySuite.cs

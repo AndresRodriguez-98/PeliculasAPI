@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using NetTopologySuite.Geometries;
 using PeliculasAPI.Datos;
 
 #nullable disable
@@ -125,16 +126,52 @@ namespace PeliculasAPI.Migrations
                     b.ToTable("PeliculasGeneros");
                 });
 
+            modelBuilder.Entity("PeliculasAPI.Entidades.PeliculasSalaCine", b =>
+                {
+                    b.Property<int>("PeliculaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SalaCineId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PeliculaId", "SalaCineId");
+
+                    b.HasIndex("SalaCineId");
+
+                    b.ToTable("PeliculasSalaCines");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.SalaCine", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Point>("Ubicacion")
+                        .HasColumnType("geography");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SalaCines");
+                });
+
             modelBuilder.Entity("PeliculasAPI.Entidades.PeliculasActores", b =>
                 {
                     b.HasOne("PeliculasAPI.Entidades.Actor", "Actor")
-                        .WithMany()
+                        .WithMany("PeliculasActores")
                         .HasForeignKey("ActorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("PeliculasAPI.Entidades.Pelicula", "Pelicula")
-                        .WithMany()
+                        .WithMany("PeliculasActores")
                         .HasForeignKey("PeliculaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -147,13 +184,13 @@ namespace PeliculasAPI.Migrations
             modelBuilder.Entity("PeliculasAPI.Entidades.PeliculasGeneros", b =>
                 {
                     b.HasOne("PeliculasAPI.Entidades.Genero", "Genero")
-                        .WithMany()
+                        .WithMany("PeliculasGeneros")
                         .HasForeignKey("GeneroId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("PeliculasAPI.Entidades.Pelicula", "Pelicula")
-                        .WithMany()
+                        .WithMany("PeliculasGeneros")
                         .HasForeignKey("PeliculaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -161,6 +198,49 @@ namespace PeliculasAPI.Migrations
                     b.Navigation("Genero");
 
                     b.Navigation("Pelicula");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.PeliculasSalaCine", b =>
+                {
+                    b.HasOne("PeliculasAPI.Entidades.Pelicula", "Pelicula")
+                        .WithMany("PeliculasSalaCine")
+                        .HasForeignKey("PeliculaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PeliculasAPI.Entidades.SalaCine", "SalaCine")
+                        .WithMany("PeliculasSalaCine")
+                        .HasForeignKey("SalaCineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pelicula");
+
+                    b.Navigation("SalaCine");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.Actor", b =>
+                {
+                    b.Navigation("PeliculasActores");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.Genero", b =>
+                {
+                    b.Navigation("PeliculasGeneros");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.Pelicula", b =>
+                {
+                    b.Navigation("PeliculasActores");
+
+                    b.Navigation("PeliculasGeneros");
+
+                    b.Navigation("PeliculasSalaCine");
+                });
+
+            modelBuilder.Entity("PeliculasAPI.Entidades.SalaCine", b =>
+                {
+                    b.Navigation("PeliculasSalaCine");
                 });
 #pragma warning restore 612, 618
         }

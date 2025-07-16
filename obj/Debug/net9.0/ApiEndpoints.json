@@ -152,6 +152,107 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PeliculasAPI.Controllers.SalaCineController",
+    "Method": "Get",
+    "RelativePath": "api/cines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PeliculasAPI.DTOs.SalaCineDTO, PeliculasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ObtenerSalasDeCine"
+  },
+  {
+    "ContainingType": "PeliculasAPI.Controllers.SalaCineController",
+    "Method": "Post",
+    "RelativePath": "api/cines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salaCineCreacionDTO",
+        "Type": "PeliculasAPI.DTOs.SalaCineCreacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeliculasAPI.Controllers.SalaCineController",
+    "Method": "Put",
+    "RelativePath": "api/cines",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salaCineCreacionDTO",
+        "Type": "PeliculasAPI.DTOs.SalaCineCreacionDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeliculasAPI.Controllers.SalaCineController",
+    "Method": "Delete",
+    "RelativePath": "api/cines",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeliculasAPI.Controllers.SalaCineController",
+    "Method": "Get",
+    "RelativePath": "api/cines/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PeliculasAPI.DTOs.SalaCineDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "ObtenerSaladeCine"
+  },
+  {
     "ContainingType": "PeliculasAPI.Controllers.GenerosController",
     "Method": "Get",
     "RelativePath": "api/generos",

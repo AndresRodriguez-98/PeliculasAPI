@@ -21,7 +21,8 @@ namespace PeliculasAPI
             services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzure>();
 
             services.AddDbContext<ApplicationDBContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                sqlServerOptions => sqlServerOptions.UseNetTopologySuite()));
             services.AddControllers().AddNewtonsoftJson();
             services.AddEndpointsApiExplorer();
         }
