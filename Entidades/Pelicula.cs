@@ -1,6 +1,6 @@
 ﻿namespace PeliculasAPI.Entidades
 {
-    public class Pelicula
+    public class Pelicula : IId
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
