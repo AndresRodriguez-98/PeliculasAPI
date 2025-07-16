@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +7,7 @@ using PeliculasAPI.DTOs;
 using PeliculasAPI.Entidades;
 using PeliculasAPI.Helpers;
 using PeliculasAPI.Servicios;
+using System.Linq.Dynamic.Core;
 
 namespace PeliculasAPI.Controllers
 {
@@ -18,14 +18,16 @@ namespace PeliculasAPI.Controllers
         private readonly ApplicationDBContext context;
         private readonly IMapper mapper;
         private readonly IAlmacenadorArchivos almacenadorArchivos;
+        private readonly ILogger logger;
         private readonly string contenedor = "peliculas";
 
         public PeliculasController(ApplicationDBContext context,
-            IMapper mapper, IAlmacenadorArchivos almacenadorArchivos)
+            IMapper mapper, IAlmacenadorArchivos almacenadorArchivos, ILogger<PeliculasController> logger)
         {
             this.context = context;
             this.mapper = mapper;
             this.almacenadorArchivos = almacenadorArchivos;
+            this.logger = logger;
         }
 
         [HttpGet]
@@ -77,6 +79,22 @@ namespace PeliculasAPI.Controllers
             {
                 peliculasQueryable = peliculasQueryable
                     .Where(x => x.PeliculasGeneros.Any(y => y.GeneroId == filtroPeliculasDTO.GeneroId));
+            }
+
+            // ORDER BY:
+            if (!string.IsNullOrEmpty(filtroPeliculasDTO.CampoOrdenar))
+            {
+                var tipoOrden = filtroPeliculasDTO.OrdenAscendente ? "ascending" : "descending";
+
+                try
+                {
+                    peliculasQueryable = peliculasQueryable.OrderBy($"{filtroPeliculasDTO.CampoOrdenar} " +
+                        $"{tipoOrden}");
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex.Message, ex);
+                }
             }
 
             await HttpContext.InsertarParametrosPaginacion(peliculasQueryable,

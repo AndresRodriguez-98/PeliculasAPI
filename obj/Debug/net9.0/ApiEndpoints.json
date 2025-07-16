@@ -480,6 +480,16 @@
         "Name": "ProximosEstrenos",
         "Type": "System.Boolean",
         "IsRequired": false
+      },
+      {
+        "Name": "CampoOrdenar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrdenAscendente",
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

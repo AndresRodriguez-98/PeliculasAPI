@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\dtos\\filtropeliculasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:dtos\\filtropeliculasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\dtos\\actorpeliculadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:dtos\\actorpeliculadetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +38,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "PeliculasController.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PeliculasController.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
+              "RelativeToolTip": "Controllers\\PeliculasController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAF8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T20:33:03.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FiltroPeliculasDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\FiltroPeliculasDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\FiltroPeliculasDTO.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\FiltroPeliculasDTO.cs",
+              "RelativeToolTip": "DTOs\\FiltroPeliculasDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:51:38.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PeliculaDetallesDTO.cs",
               "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\PeliculaDetallesDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\PeliculaDetallesDTO.cs",
@@ -47,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ActorPeliculaDetalleDTO.cs",
               "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\DTOs\\ActorPeliculaDetalleDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\ActorPeliculaDetalleDTO.cs",
@@ -60,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AutoMapperProfiles.cs",
               "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\AutoMapperProfiles.cs",
               "RelativeDocumentMoniker": "Helpers\\AutoMapperProfiles.cs",
@@ -69,19 +99,6 @@
               "ViewState": "AgIAACsAAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T21:29:34.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PeliculasController.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PeliculasController.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\PeliculasController.cs",
-              "RelativeToolTip": "Controllers\\PeliculasController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T20:33:03.103Z",
               "EditorCaption": ""
             }
           ]

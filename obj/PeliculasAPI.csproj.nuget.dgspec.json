@@ -79,6 +79,10 @@
             "Microsoft.Extensions.Configuration.NewtonsoftJson": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.6.6, )"
             }
           },
           "imports": [
