@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NetTopologySuite.Geometries;
 using PeliculasAPI.Datos;
 using PeliculasAPI.DTOs;
 using PeliculasAPI.Entidades;
@@ -10,9 +12,16 @@ namespace PeliculasAPI.Controllers
     [Route("api/cines")]
     public class SalaCineController: CustomBaseController
     {
-        public SalaCineController(ApplicationDBContext context, IMapper mapper)
+        private readonly ApplicationDBContext context;
+        private readonly IMapper mapper;
+        private readonly GeometryFactory geometryFactory;
+
+        public SalaCineController(ApplicationDBContext context, IMapper mapper, GeometryFactory geometryFactory)
             :base(context,mapper)
         {
+            this.context = context;
+            this.mapper = mapper;
+            this.geometryFactory = geometryFactory;
         }
 
         [HttpGet(Name = "ObtenerSalasDeCine")]
@@ -25,6 +34,28 @@ namespace PeliculasAPI.Controllers
         public async Task<ActionResult<SalaCineDTO>> Get(int id)
         {
             return await Get<SalaCine, SalaCineDTO>(id);
+        }
+
+        [HttpGet("Cercanos")]
+        public async Task<ActionResult<List<SalaDeCineCercanoDTO>>> Cercanos(
+            [FromQuery] SalaDeCineCercanoFiltroDTO filtro)
+        {
+            var ubicacionUsuario = geometryFactory.CreatePoint(new Coordinate(filtro.Longitud, filtro.Latitud));
+
+            var salasDeCine = await context.SalaCines
+                .OrderBy(x => x.Ubicacion.Distance(ubicacionUsuario))
+                .Where(x => x.Ubicacion.IsWithinDistance(ubicacionUsuario, filtro.DistanciaEnKms * 1000))
+                .Select(x => new SalaDeCineCercanoDTO
+                {
+                    Id = x.Id,
+                    Nombre = x.Nombre,
+                    Latitud = x.Ubicacion.Y,
+                    Longitud = x.Ubicacion.X,
+                    DistanciaEnMetros = Math.Round(x.Ubicacion.Distance(ubicacionUsuario))
+                })
+                .ToListAsync();
+
+            return salasDeCine;
         }
 
         [HttpPost]

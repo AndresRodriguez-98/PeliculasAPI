@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250717200707_TablaReviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SalaCineController.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SalaCineController.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
-              "RelativeToolTip": "Controllers\\SalaCineController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
+              "Title": "20250717200707_TablaReviews.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250717200707_TablaReviews.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs",
+              "RelativeToolTip": "Migrations\\20250717200707_TablaReviews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T17:13:55.27Z",
+              "WhenOpened": "2025-07-17T20:07:07.257Z",
               "EditorCaption": ""
             }
           ]

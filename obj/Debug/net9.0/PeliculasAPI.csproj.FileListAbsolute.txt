@@ -20,7 +20,6 @@ C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.buil
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\refint\PeliculasAPI.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\PeliculasAPI.pdb
@@ -178,3 +177,10 @@ C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.EntityFram
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\NetTopologySuite.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\NetTopologySuite.IO.SqlServerBytes.dll
 C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\Andrés\source\repos\PeliculasAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Andrés\source\repos\PeliculasAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll

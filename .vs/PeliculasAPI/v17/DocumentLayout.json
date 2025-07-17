@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\salacinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250717200707_TablaReviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\helpers\\peliculaexisteattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:helpers\\peliculaexisteattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|c:\\users\\andr\u00E9s\\source\\repos\\peliculasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D98F582F-10AB-432D-83A4-3BB7CD1CDFBA}|PeliculasAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\CustomBaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomBaseController.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\CustomBaseController.cs",
+              "RelativeToolTip": "Controllers\\CustomBaseController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwCQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T20:25:08Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -23,14 +52,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SalaCineController.cs",
-              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SalaCineController.cs",
-              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\SalaCineController.cs",
-              "RelativeToolTip": "Controllers\\SalaCineController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T17:13:55.27Z",
+              "WhenOpened": "2025-07-17T20:23:45.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T20:22:29.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PeliculaExisteAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\PeliculaExisteAttribute.cs",
+              "RelativeDocumentMoniker": "Helpers\\PeliculaExisteAttribute.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Helpers\\PeliculaExisteAttribute.cs",
+              "RelativeToolTip": "Helpers\\PeliculaExisteAttribute.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T20:19:31.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250717200707_TablaReviews.cs",
+              "DocumentMoniker": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250717200707_TablaReviews.cs",
+              "ToolTip": "C:\\Users\\Andr\u00E9s\\source\\repos\\PeliculasAPI\\Migrations\\20250717200707_TablaReviews.cs",
+              "RelativeToolTip": "Migrations\\20250717200707_TablaReviews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T20:07:07.257Z",
               "EditorCaption": ""
             }
           ]
